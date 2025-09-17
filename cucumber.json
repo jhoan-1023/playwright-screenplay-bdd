@@ -1,0 +1,12 @@
+{
+  "default": {
+    "format": [
+      "json:reports/json/cucumber_report.json",
+      "progress-bar"
+    ],
+    "require": [
+      "steps/**/*.ts",
+      "src/**/*.ts"
+    ]
+  }
+}

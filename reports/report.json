@@ -1,0 +1,144 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "agendar-un-viaje-con-filtro-de-precios;seleccionar-fechas-y-pasajeros",
+        "keyword": "Escenario",
+        "line": 4,
+        "name": "Seleccionar fechas y pasajeros",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 809425699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que el usuario abre la página de reservas",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1599720199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 6,
+            "name": "ingresa las fechas de partida \"13\" y regreso \"25\" para 2 adultos y 1 niños",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7554253199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 7,
+            "name": "el usuario hace click en SELECT DESTINATION",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3054083500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 8,
+            "name": "el usuario hace click en LOAD MORE",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574787499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 9,
+            "name": "el usuario filtra los destinos por precio \"1000\"",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2125084999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 10,
+            "name": "el usuario selecciona el destino \"Tayabamba\"",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 589910700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 11,
+            "name": "llena los datos del checkout con nombre \"Jhoan Marquez\", email \"jhoan@test.com\", ssn \"123-12-1234\", y teléfono \"+17871234567\"",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2627501999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 13,
+            "name": "se debe mostrar la lista de destinos disponibles",
+            "match": {
+              "location": "steps\\open_browser.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 605900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 369830200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "agendar-un-viaje-con-filtro-de-precios",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Agendar un viaje con filtro de precios",
+    "tags": [],
+    "uri": "features\\agendar_viaje.feature"
+  }
+]

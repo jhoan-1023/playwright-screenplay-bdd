@@ -1,0 +1,20 @@
+{
+  "name": "playwright-screenplay-bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Proyecto Playwright + Cucumber + Screenplay",
+  "author": "Jhoan Márquez",
+  "license": "ISC",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require src/steps/**/*.ts --format json:reports/json/cucumber_report.json",
+    "report": "node reportes.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "playwright": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
