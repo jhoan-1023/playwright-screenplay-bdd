@@ -9,17 +9,16 @@ setDefaultTimeout(60 * 1000);
 Before<CustomWorld>(async function () {
   browser = await chromium.launch({
     headless: false,
-    slowMo: 500   // 👈 medio segundo entre acciones
+    slowMo: 500
   });
 
-  // 👉 viewport null deja que Playwright use el tamaño de ventana por defecto del SO
   const context = await browser.newContext({
     viewport: null
   });
 
   this.page = await context.newPage();
 
-  console.log("🚀 Navegador iniciado (usando tamaño de ventana del sistema)");
+  console.log("Navegador iniciado (usando tamaño de ventana del sistema)");
 });
 
 After<CustomWorld>(async function () {
@@ -28,6 +27,6 @@ After<CustomWorld>(async function () {
   }
   if (browser) {
     await browser.close();
-    console.log("🔻 Navegador cerrado");
+    console.log("Navegador cerrado");
   }
 });
