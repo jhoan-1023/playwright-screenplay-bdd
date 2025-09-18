@@ -51,7 +51,7 @@ Este repositorio contiene **dos flujos E2E** automatizados sobre la demo de rese
 
 ---
 
-## 3) Diseño (Screenplay en una frase)
+## 3) Diseño Screenplay
 - **Steps**: qué hace el usuario (legible por negocio).  
 - **Tasks**: cómo lo hace (acciones de negocio de mayor nivel).  
 - **Interactions**: acciones atómicas reutilizables (solo una era obligatoria en el reto y se implementó).  
@@ -90,25 +90,5 @@ npm install
 > Luego: `npm run report` → crea `reports/html/index.html`.  
 > Abrir en Windows: `npm run open-report` (o doble clic en `index.html`).  
 
----
-
-## 5) Qué cubre cada feature
-
-### a) `agendar_viaje.feature`
-- Búsqueda de destinos, **LOAD MORE**, selección de destino.  
-- Checkout: nombre, email, **SSN**, teléfono.  
-- Aplicación de **código PROMO**.  
-- **Scenario Outline** con **Ejemplos**: varios juegos de datos.  
-
-### b) `agendar_viaje_filtros.feature`
-- Filtros por **Launch** y **Planet Color** (valores reales del dropdown).  
-- **Carga de archivo** (`tests/resources/seguro.pdf`) en el checkout.  
-- Intento de pago **sin aceptar términos**, y validación del **modal**:  
-  - Título esperado: `Terms and Conditions`  
-  - Mensaje esperado: `You must agree to the terms and conditions to complete your purchase.`  
-- Paso Then parametrizado: `"<tituloError>"` y `"<mensajeError>"` en `Ejemplos`.  
-- Log de verificación en consola:  
-  - `Título: "...", Mensaje: "..."`  
-
-## 6) Autor
+## 5) Autor
 **Jhoan Márquez** – QA Automation
