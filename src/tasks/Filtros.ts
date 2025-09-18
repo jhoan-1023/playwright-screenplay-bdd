@@ -21,15 +21,6 @@ export class Filtros {
         await page.locator(FiltrosUI.errorTerminos).isVisible();
     }
 
-    static async validarModalError(page: Page, tituloEsperado: string, mensajeEsperado: string) {
-        await page.waitForSelector(FiltrosUI.errorModalContainer, { state: 'visible', timeout: 10000 });
-        const tituloLocator = page.locator(FiltrosUI.errorModalTitle);
-        const mensajeLocator = page.locator(FiltrosUI.errorModalMessage);
-        const titulo = await tituloLocator.innerText();
-        const mensaje = await mensajeLocator.innerText();
-        await expect(tituloLocator).toContainText(tituloEsperado);
-        await expect(mensajeLocator).toContainText(mensajeEsperado);
-        console.log(`Título: "${titulo}", Mensaje: "${mensaje}"`);
-    }
+    
 
 }

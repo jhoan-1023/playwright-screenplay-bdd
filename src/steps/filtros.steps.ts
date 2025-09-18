@@ -2,6 +2,7 @@ import { When, Then } from "@cucumber/cucumber";
 import { CustomWorld } from "../support/world";
 import { Filtros } from "../tasks/Filtros";
 import { expect } from "@playwright/test";
+import { ModalError } from "../questions/ModalError";
 
 When<CustomWorld>('el usuario filtra los destinos por Launch {string}', async function (launch: string) {
   await Filtros.filtrarPorLaunch(this.page!, launch);
@@ -19,6 +20,8 @@ When<CustomWorld>('NO acepta los términos y condiciones', async function () {
   console.log("Términos NO aceptados");
 });
 
-Then<CustomWorld>('se debe mostrar el modal con título {string} y mensaje {string}',async function (titulo: string, mensaje: string) {
-    await Filtros.validarModalError(this.page!, titulo, mensaje);
+Then<CustomWorld>('se debe mostrar el modal con título {string} y mensaje {string}', async function (tituloEsperado: string, mensajeEsperado: string) {
+    const modalTexts = await ModalError.getTexts(this.page!);
+    expect(modalTexts.title).toContain(tituloEsperado);
+    expect(modalTexts.message).toContain(mensajeEsperado);
 });
