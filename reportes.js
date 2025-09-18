@@ -1,14 +1,14 @@
 const report = require('multiple-cucumber-html-reporter');
 
 report.generate({
-  jsonDir: 'reports/json', // aquí Cucumber guarda los resultados en JSON
-  reportPath: 'reports/html', // aquí se generará el HTML
+  jsonDir: 'reports/json', 
+  reportPath: 'reports/html', 
   metadata: {
     browser: {
       name: 'chrome',
       version: 'latest'
     },
-    device: 'Local Test Machine',
+    device: 'Local',
     platform: {
       name: 'Windows',
       version: '11'

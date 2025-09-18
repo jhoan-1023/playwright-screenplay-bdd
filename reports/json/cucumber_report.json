@@ -4,6 +4,357 @@
     "elements": [
       {
         "description": "",
+        "id": "agendar-un-viaje-con-filtro-de-precios;completar-el-checkout-con-diferentes-datos-de-usuario",
+        "keyword": "Esquema del escenario",
+        "line": 19,
+        "name": "Completar el checkout con diferentes datos de usuario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 454857000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que el usuario abre la página de reservas",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1078689699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 6,
+            "name": "ingresa las fechas de partida \"20\" y regreso \"25\" para 2 adultos y 1 niños",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2832115100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 7,
+            "name": "el usuario hace click en SELECT DESTINATION",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2595684400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 8,
+            "name": "el usuario hace click en LOAD MORE",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1061258599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 9,
+            "name": "el usuario filtra los destinos por precio \"1000\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92679000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 10,
+            "name": "el usuario selecciona el destino \"Tayabamba\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 199626700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 11,
+            "name": "llena los datos del checkout con nombre \"Jhoan Marquez\", email \"jhoan@test.com\", ssn \"123-12-1234\", y teléfono \"+34612345678\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99203999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 12,
+            "name": "el usuario aplica el código promocional \"PROMO2025\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85829400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 13,
+            "name": "el usuario acepta los términos y condiciones",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79988199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 14,
+            "name": "el usuario presiona el botón PAY NOW",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59630000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 15,
+            "name": "se debe mostrar la lista de destinos disponibles",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 920400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46001100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "agendar-un-viaje-con-filtro-de-precios;completar-el-checkout-con-diferentes-datos-de-usuario",
+        "keyword": "Esquema del escenario",
+        "line": 20,
+        "name": "Completar el checkout con diferentes datos de usuario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 550235300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que el usuario abre la página de reservas",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1069126899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 6,
+            "name": "ingresa las fechas de partida \"15\" y regreso \"28\" para 1 adultos y 2 niños",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2811526299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 7,
+            "name": "el usuario hace click en SELECT DESTINATION",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2576685100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 8,
+            "name": "el usuario hace click en LOAD MORE",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1086685999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 9,
+            "name": "el usuario filtra los destinos por precio \"1500\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104496300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 10,
+            "name": "el usuario selecciona el destino \"Babahoyo\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124909100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 11,
+            "name": "llena los datos del checkout con nombre \"Maria Lopez\", email \"maria@test.com\", ssn \"321-45-6789\", y teléfono \"+34698765432\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97187200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 12,
+            "name": "el usuario aplica el código promocional \"PROMO2026\"",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91012600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 13,
+            "name": "el usuario acepta los términos y condiciones",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63878700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 14,
+            "name": "el usuario presiona el botón PAY NOW",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60831299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 15,
+            "name": "se debe mostrar la lista de destinos disponibles",
+            "match": {
+              "location": "src\\steps\\open_browser.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2022600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42697899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "agendar-un-viaje-con-filtro-de-precios",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Agendar un viaje con filtro de precios",
+    "tags": [],
+    "uri": "features\\agendar_viaje.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "agendar-un-viaje-aplicando-filtros-avanzados-de-launch-y-planet-color;checkout-con-filtros-y-validación-de-términos",
         "keyword": "Esquema del escenario",
         "line": 21,
@@ -14,7 +365,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 995160199
+              "duration": 366654700
             }
           },
           {
@@ -23,11 +374,11 @@
             "line": 5,
             "name": "que el usuario abre la página de reservas",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:8"
+              "location": "src\\steps\\open_browser.steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1567189099
+              "duration": 915760599
             }
           },
           {
@@ -36,11 +387,11 @@
             "line": 6,
             "name": "ingresa las fechas de partida \"20\" y regreso \"25\" para 2 adultos y 1 niños",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:13"
+              "location": "src\\steps\\open_browser.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 7577774500
+              "duration": 2528356499
             }
           },
           {
@@ -49,11 +400,11 @@
             "line": 7,
             "name": "el usuario hace click en SELECT DESTINATION",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:20"
+              "location": "src\\steps\\open_browser.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 3054492999
+              "duration": 2564776500
             }
           },
           {
@@ -62,11 +413,11 @@
             "line": 8,
             "name": "el usuario hace click en LOAD MORE",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:24"
+              "location": "src\\steps\\open_browser.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1551339599
+              "duration": 1052494099
             }
           },
           {
@@ -79,7 +430,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1098716700
+              "duration": 98718500
             }
           },
           {
@@ -92,7 +443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1068338299
+              "duration": 80798400
             }
           },
           {
@@ -101,11 +452,11 @@
             "line": 11,
             "name": "el usuario selecciona el destino \"Madan\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:35"
+              "location": "src\\steps\\open_browser.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 590770300
+              "duration": 85423099
             }
           },
           {
@@ -114,11 +465,11 @@
             "line": 12,
             "name": "llena los datos del checkout con nombre \"Jhoan Márquez\", email \"jhoan@test.com\", ssn \"123-12-1234\", y teléfono \"+34612345678\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:39"
+              "location": "src\\steps\\open_browser.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 2614083700
+              "duration": 87850099
             }
           },
           {
@@ -131,7 +482,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 522513599
+              "duration": 14031399
             }
           },
           {
@@ -140,11 +491,11 @@
             "line": 14,
             "name": "el usuario aplica el código promocional \"PROMO2025\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:52"
+              "location": "src\\steps\\open_browser.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1058436999
+              "duration": 65142399
             }
           },
           {
@@ -157,7 +508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 410299
+              "duration": 1009600
             }
           },
           {
@@ -166,11 +517,11 @@
             "line": 16,
             "name": "el usuario presiona el botón PAY NOW",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:63"
+              "location": "src\\steps\\open_browser.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 558529099
+              "duration": 50677100
             }
           },
           {
@@ -183,7 +534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39388500
+              "duration": 40683100
             }
           },
           {
@@ -191,7 +542,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 321427899
+              "duration": 40184799
             }
           }
         ],
@@ -210,7 +561,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 685235899
+              "duration": 369321500
             }
           },
           {
@@ -219,11 +570,11 @@
             "line": 5,
             "name": "que el usuario abre la página de reservas",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:8"
+              "location": "src\\steps\\open_browser.steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1318708099
+              "duration": 806912700
             }
           },
           {
@@ -232,11 +583,11 @@
             "line": 6,
             "name": "ingresa las fechas de partida \"22\" y regreso \"26\" para 1 adultos y 3 niños",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:13"
+              "location": "src\\steps\\open_browser.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 7520624199
+              "duration": 2474557800
             }
           },
           {
@@ -245,11 +596,11 @@
             "line": 7,
             "name": "el usuario hace click en SELECT DESTINATION",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:20"
+              "location": "src\\steps\\open_browser.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 3065609100
+              "duration": 2544040400
             }
           },
           {
@@ -258,11 +609,11 @@
             "line": 8,
             "name": "el usuario hace click en LOAD MORE",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:24"
+              "location": "src\\steps\\open_browser.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1536611299
+              "duration": 1074161499
             }
           },
           {
@@ -275,7 +626,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1086252000
+              "duration": 98570599
             }
           },
           {
@@ -288,7 +639,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1067027999
+              "duration": 98316199
             }
           },
           {
@@ -297,11 +648,11 @@
             "line": 11,
             "name": "el usuario selecciona el destino \"Shenji\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:35"
+              "location": "src\\steps\\open_browser.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 583989700
+              "duration": 113976999
             }
           },
           {
@@ -310,11 +661,11 @@
             "line": 12,
             "name": "llena los datos del checkout con nombre \"Maria Lopez\", email \"maria@test.com\", ssn \"321-45-6789\", y teléfono \"+34612345678\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:39"
+              "location": "src\\steps\\open_browser.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 2598868199
+              "duration": 88260900
             }
           },
           {
@@ -327,7 +678,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 523964600
+              "duration": 16577400
             }
           },
           {
@@ -336,11 +687,11 @@
             "line": 14,
             "name": "el usuario aplica el código promocional \"PROMO2026\"",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:52"
+              "location": "src\\steps\\open_browser.steps.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1053833899
+              "duration": 67705699
             }
           },
           {
@@ -353,7 +704,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 322899
+              "duration": 1418099
             }
           },
           {
@@ -362,11 +713,11 @@
             "line": 16,
             "name": "el usuario presiona el botón PAY NOW",
             "match": {
-              "location": "src\\steps\\open_browser.steps.ts:63"
+              "location": "src\\steps\\open_browser.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 559367800
+              "duration": 67545600
             }
           },
           {
@@ -379,7 +730,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26340499
+              "duration": 53107100
             }
           },
           {
@@ -387,7 +738,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 289757900
+              "duration": 41199000
             }
           }
         ],

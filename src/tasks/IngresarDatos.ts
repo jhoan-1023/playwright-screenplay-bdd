@@ -16,45 +16,38 @@ export class IngresarDatos {
     async llenarFormulario(page: Page) {
         await page.click(BookingPage.departingInput);
         await page.waitForTimeout(500);
-
         const diaPartida = page.locator(BookingPage.calendarDay(this.partida)).first();
         await diaPartida.click({ force: true });
-
         await page.waitForTimeout(500);
         await page.locator(BookingPage.okButton).first().click();
-
         await page.click(BookingPage.returningInput);
         await page.waitForTimeout(500);
-
         const diaRegreso = page.locator(BookingPage.calendarDay(this.regreso)).first();
         await diaRegreso.click({ force: true });
-
         await page.waitForTimeout(500);
         await page.locator(BookingPage.okButton).first().click();
-
         await page.click(BookingPage.adultsInput);
         await page.waitForSelector(BookingPage.adultsOption(this.adultos), { timeout: 5000 });
         await page.click(BookingPage.adultsOption(this.adultos));
-        console.log(`Adults seleccionados: ${this.adultos}`);
-
+        console.log(`Adultos seleccionados: ${this.adultos}`);
         await page.click(BookingPage.childrenInput);
         await page.waitForSelector(BookingPage.childrenOption(this.ninos), { timeout: 5000 });
         await page.click(BookingPage.childrenOption(this.ninos));
-        console.log(`Children seleccionados: ${this.ninos}`);
+        console.log(`Niños seleccionados: ${this.ninos}`);
     }
 
     async clickSelectDestination(page: Page) {
         await page.waitForTimeout(500);
         await page.click(BookingPage.selectDestinationBtn);
         await page.waitForTimeout(2000);
-        console.log("Click en SELECT DESTINATION ejecutado");
+        console.log("Click en SELECT DESTINATION");
     }
 
     async clickLoadMore(page: Page) {
         await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
         await page.waitForTimeout(1000);
         await page.click(BookingPage.loadMoreBtn);
-        console.log("Click en LOAD MORE ejecutado");
+        console.log("Click en LOAD MORE");
     }
 
     async filtrarPorPrecio(page: Page, precio: number) {

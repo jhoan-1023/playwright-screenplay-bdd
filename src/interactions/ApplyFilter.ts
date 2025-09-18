@@ -7,6 +7,6 @@ export class ApplyFilter {
     await input.click();
     await input.fill(price.toString());
     await input.press('Enter');
-    console.log(`✅ Filtro aplicado con precio: ${price}`);
+    console.log(`Filtro aplicado con precio: ${price}`);
   }
 }

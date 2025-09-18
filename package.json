@@ -6,7 +6,7 @@
   "author": "Jhoan Márquez",
   "license": "ISC",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require src/steps/**/*.ts --format json:reports/json/cucumber_report.json",
+    "test": "cucumber-js --parallel 2 features/**/*.feature --require-module ts-node/register --require src/steps/**/*.ts --format json:reports/json/cucumber_report.json",
     "report": "node reportes.js"
   },
   "devDependencies": {
